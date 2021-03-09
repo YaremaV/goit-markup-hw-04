@@ -46,6 +46,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -136,26 +137,28 @@ img {
   align-items: center;
 }
 
-.auth-nav .mail::before {
+/* .auth-nav .mail::before {
   content: "";
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  /* background-color: red; */
-  background-image: url(../Images/SVG-img/envelope.png);
+  background-color: red;
+   background-image: url(../Images/SVG-img/envelope.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 .auth-nav .tel::before {
   content: "";
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  /* background-color: red; */
+   background-color: red;
   background-image: url(../Images/SVG-img/Vector.png);
   background-size: contain;
   background-repeat: no-repeat;
-}
+} */
+
 /*  navigation */
 
 .navigation {
@@ -261,7 +264,7 @@ img {
   margin-left: 0;
 }
 /* ======ICON==== */
-.feature-list .item::before {
+/* .feature-list .item::before {
   content: "";
   display: block;
   height: 120px;
@@ -283,7 +286,7 @@ img {
 }
 .icon-astronaut::before {
   background-image: url(../Images/SVG-img/astronaut.png);
-}
+} */
 
 .feature-list .item:last-child {
   margin-right: 0;
