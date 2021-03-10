@@ -208,6 +208,16 @@ img {
 /*HERO*/
 
 .hero {
+  max-width: 1600px;
+  margin: 0 auto;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../Images/hero-bgc-min.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: var(--back-color);
   padding-top: 200px;
   padding-bottom: 200px;
@@ -264,29 +274,14 @@ img {
   margin-left: 0;
 }
 /* ======ICON==== */
-/* .feature-list .item::before {
-  content: "";
-  display: block;
+.icon {
+  width: 270px;
   height: 120px;
-  margin-bottom: 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-}
 
-.icon-setelite::before {
-  background-image: url(../Images/SVG-img/setelite.png);
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
-.icon-clock::before {
-  background-image: url(../Images/SVG-img/Clock.png);
-}
-.icon-case::before {
-  background-image: url(../Images/SVG-img/case.png);
-}
-.icon-astronaut::before {
-  background-image: url(../Images/SVG-img/astronaut.png);
-} */
 
 .feature-list .item:last-child {
   margin-right: 0;
@@ -361,6 +356,10 @@ img {
   background-color: var(--white-color);
 }
 
+.container-team .text {
+  margin-bottom: 30px;
+}
+
 .suptitle {
   margin-top: 0;
   margin-bottom: 50px;
@@ -378,6 +377,21 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+.social-list-items {
+  margin-right: 34px;
+}
+.social-list-items:last-child {
+  margin-right: 0px;
+}
+
 /* CLients */
 .section-clients {
   padding-top: 94px;
@@ -392,6 +406,26 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--praimary-text-color);
+}
+
+.section-clients .list {
+  display: flex;
+  justify-content: center;
+  margin-right: -30px;
+}
+
+.section-clients .item {
+  width: 170px;
+  height: 90px;
+  flex-basis: calc(100% / 6-30);
+  margin-right: 30px;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.section-clients .item:last-child {
+  margin-right: 0;
 }
 
 /* FOOTER */
@@ -443,6 +477,22 @@ img {
 }
 .add a + a {
   margin-top: 9px;
+}
+
+.footer .title {
+  text-align: center;
+  margin-left: 156px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+.contain {
+  display: flex;
 }
 
 /* Портфолио */
