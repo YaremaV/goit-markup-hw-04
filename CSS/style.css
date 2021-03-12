@@ -252,15 +252,16 @@ img {
   padding: 10px 32px;
   border-radius: 4px;
 
-  color: var(--white-color);
-  background-color: var(--accent-color);
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
   cursor: pointer;
   border: none;
+
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button:hover {
@@ -643,14 +644,13 @@ img {
 
 .btn {
   padding: 6px 22px;
-
-  color: var(--praimary-text-color);
-  background-color: var(--backgroundcolor-team);
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+
+  color: var(--praimary-text-color);
+  background-color: var(--backgroundcolor-team);
 
   cursor: pointer;
   text-align: center;
@@ -662,6 +662,8 @@ img {
 .btn:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio .list {
@@ -681,8 +683,13 @@ img {
   margin-bottom: 18px;
 } */
 
+.portfolio-link {
+  display: block;
+}
+
 .portfolio-link:hover,
 .portfolio-link:focus {
+  box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
