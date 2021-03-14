@@ -134,6 +134,7 @@ img {
 
 .auth-nav .info {
   display: flex;
+  align-items: center;
 }
 
 .icon {
